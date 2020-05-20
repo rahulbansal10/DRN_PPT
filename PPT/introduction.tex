@@ -32,7 +32,7 @@
 
 \begin{frame}{State-of-art reinforcement learning methods}
    \begin{itemize}
-       \item State-of-art reinforcement learning methods usually apply the simple $\epsilon$-greedy strategy or Upper Confidence Bound (UCB) (mainly for Multi-Armed Bandit methods). 
+       \item State-of-art reinforcement learning methods usually apply the simple $\epsilon$-greedy strategy \cite{mnih2015human} or Upper Confidence Bound (UCB) \cite{li2010contextual} (mainly for Multi-Armed Bandit methods). 
        \item However, both strategies could harm the recommendation performance to some extent in a short period. 
        \item $\epsilon$ -greedy strategy may recommend the customer with totally unrelated items
        \item UCB can not get a relatively accurate reward estimation for an item until this item has been tried several times.
@@ -40,15 +40,14 @@
 \end{frame}
 
 
-\begin{frame}{User Behaviour}
-        \begin{figure}
-            \centering
-            \includegraphics[scale = 0.6]{PPT/figure 1.png}
-            \caption{Distribution of clicked categories of an active user
-in ten weeks. User interest is evolving over time.}
-        \end{figure}
-\end{frame}
-
+ \begin{frame}{User Behaviour}
+         \begin{figure}
+             \centering
+             \includegraphics[scale = 0.6]{PPT/figure 1.png}
+             \caption{Distribution of clicked categories of an active user
+ in ten weeks. User interest is evolving over time.}
+         \end{figure}
+ \end{frame}
 
 \begin{frame}{How is this method different?}
    \begin{itemize}
